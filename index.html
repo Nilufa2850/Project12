@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+    
+        <div id="div1">
+            <h1>Registration Form</h1>
+            <form action="" method="get" onsubmit="return validForm()">
+
+            <!--Name-->
+                <label for="name1">Name</label>
+                <input type="text"  name="name1"  placeholder="Enter your first Name" onblur="return nameCheck()" oninput="return nameCheck()" required>
+                <input type="text"  name="name2"  placeholder="Enter your last Name" onblur="return nameCheck()" oninput="return nameCheck()">
+                <p id="nameError"></p>
+                <br>
+            <!--Email address-->
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Enter your Email" required oninput="return emailCheck ()" onblur="return emailCheck ()" > 
+                <p id="emailError"></p>
+                <br>
+            <!--Password-->
+                <label for="pass">Password</label>
+                <input type="password" name="pass" placeholder="Enter your password" required oninput="return passwordCheck ()" onblur="return passwordCheck ()" >
+                <p id="passError"></p>
+                <br>
+            <!--Agree-->
+                <input type="checkbox" id="agree" required>
+                <label for="agree">I agree to the above information</label>
+                <br>
+            <!--Submit-->
+                <button type="submit">Submit</button>
+            <!--Reset-->
+                <button type="reset">Reset</button>
+
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
